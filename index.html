@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begify</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- googel font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome cdn  -->
+    <script src="https://kit.fontawesome.com/7e464cca7d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar container">
-            <div class="hamburger">
-                menu
-            </div>
+
             <h1>LOGO</h1>
             <ul class="nav-items">
                 <li><a class="nav-links" href="#">Home</a></li>
@@ -22,8 +27,14 @@
                 <li><a class="nav-links" href="#">Contact</a></li>
                 <li><a class="nav-links" href="#">Services</a></li>
             </ul>
-            <div>
-                <a href="#">login</a>
+            <div class="login">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+
+                </div> <a href="#">Login</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -31,11 +42,9 @@
     <section id="banner">
         <div class="container hero">
             <div class="banner-content">
-                <h1>
-                    <span>DESIGNED FOR MODERN LIFE</span> <br>
-                    <span class="highlight">CRAFTED FOR</span> <br>
-                    ENDLESS ADVENTURES
-                  </h1>
+                <h1 class="heading-1">
+                    DESIGNED FOR MODERN LIFE, CRAFTED FOR ADVENTURE
+                </h1>
             </div>
             <div class="hero-img">
                 <img src="./assets/bags/bag-1.png" alt="hero-image">
@@ -44,13 +53,62 @@
     </section>
 
     <!-- services and products section -->
-    <section style="border: 1px solid red" id="services-products">
-
+    <section id="services-products">
+        <div class="container serv-prod">
+            <div class="image">
+                <img src="./assets/image.jpg" alt="image">
+            </div>
+            <div class="description">
+                <div>
+                    <div>
+                        <h2 class="heading-2">About Products</h2>
+                        <p class="margin-y">
+                            We provide exceptional services tailored to meet your unique needs. With a commitment to
+                            quality and reliability, our expert team ensures every solution is delivered seamlessly and
+                            exceeds expectations. Trust us to bring innovative ideas and dedicated support to help you
+                            achieve your goals.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="heading-2">About Services</h2>
+                        <p class="margin-y">
+                            Our services are designed to deliver excellence
+                            and satisfaction. We prioritize your needs by
+                            offering tailored solutions, ensuring reliability, and maintaining the highest standards of
+                            quality. Whether you seek expert assistance, innovative strategies, or seamless execution,
+                            our team is dedicated to exceeding your expectations. Experience the difference with
+                            services crafted to help you succeed!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- services  secton-->
+    <!-- services  section-->
     <section id="about-products">
-
+        <div class="container product-container">
+            <div class="products">
+                <div>
+                    <img src="./assets/bags/bag-1.png" alt="bags">
+                    <img src="./assets/bags/bag-2.png" alt="bags">
+                </div>
+                <div>
+                    <img src="./assets/bags/bag-3.png" alt="bags">
+                    <img src="./assets/bags/bag-1.png" alt="bags">
+                </div>
+            </div>
+            <div class="product-content">
+                <div>
+                    <h2 class="dark-color heading-2">About Our Product</h2>
+                    <p class="light-color p-font margin-y">Discover the perfect blend of style and
+                        functionality in our premium product line. Each item is crafted with care, offering durability,
+                        elegance, and practicality for your everyday needs. From sleek designs to unmatched quality, our
+                        collection is tailored to exceed your expectations and enhance your lifestyle.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- products section  -->
@@ -59,9 +117,49 @@
     </section>
 
     <!-- footer  -->
-    <footer>
 
+    <footer>
+        <hr>
+        <div class="container footer-content">
+            <div class="logo-social">
+                <h3 class="heading-4 dark-color">Begify</h3>
+                <p class="margin-y p-font light-color">Your trusted partner for modern innovations.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/social/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/social/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="./assets/social/facebook.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="dark-color">Important Links</h3>
+
+                <ul class="margin-y">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-payment">
+                <h3 class="dark-color">We Accept</h3>
+                <div class="payment-icons margin-y">
+                    <img src="./assets/payments/visa.png" alt="Visa">
+                    <img src="./assets/payments/mastercard.png" alt="MasterCard">
+                    <img src="./assets/payments/paypal.png" alt="PayPal">
+                </div>
+            </div>
+        </div>
+        <p class="copy-right">&copy; 2025 Bagify. All Rights Reserved.</p>
     </footer>
+
 </body>
 
 </html>
