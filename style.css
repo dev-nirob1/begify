@@ -15,8 +15,9 @@
     --dark-color: #172541;
     --light-color: #565872;
     --white-color: #fff;
-    --btn-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    /* section header width  */
     --section-header-descrip-width: 100%;
+    /* navbar toggle */
     --hamburger-toggle: flex;
     --nav-items-toogle: none;
     /* h1 font-size  */
@@ -29,6 +30,7 @@
     --para-size: .9rem;
     /*margin*/
     --margin-y: .8rem 0;
+    --margin-b: 1rem;
     --section-gap-bottom: 2rem;
 
     /* border radius  */
@@ -39,16 +41,13 @@
     --section-padding: 1.5rem;
     --footer-padding: 1.5rem .625rem;
     --header-bottom-space: 1.5rem;
-
-    /* flex  */
+    /* flex - grid  */
     --direction: column;
-    --gap: .625rem;
-
-    /* grid  */
     --grid-columns-1-2-4: repeat(1, 1fr);
-
+    --gap: .625rem;
 }
 
+/* anchor styles with hover effects */
 a {
     color: inherit;
     font-size: var(--para-size);
@@ -59,70 +58,7 @@ a:hover {
     transition-duration: .4s;
 }
 
-.section-description {
-    width: var(--section-header-descrip-width);
-    margin: 0 auto;
-}
-
-.header-spacing-bottom {
-    padding: var(--header-bottom-space);
-}
-
-.section-padding {
-    padding: var(--section-padding);
-}
-
-.btn {
-    padding: 12px 20px;
-    border-radius: var(--border-radius);
-    font-size: var(--para-size);
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: var(--btn-gradient);
-    color: var(--white-color);
-}
-
-.btn-secondary {
-    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
-    color: var(--white-color);
-}
-
-.btn-primary:hover {
-    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
-}
-
-.btn-secondary:hover {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-}
-
-/* utility-classes  */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.margin-bottom {
-    margin-bottom: var(--section-gap-bottom)
-}
-
-.font-bold {
-    font-weight: 600;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-white {
-    color: var(--white-color);
-}
-
+/* typoghraphy  */
 .p-font {
     font-size: var(--para-size);
 }
@@ -143,6 +79,58 @@ a:hover {
     font-size: var(--font-size-h5);
 }
 
+.font-bold {
+    font-weight: 600;
+}
+
+/* ---------------utility classes ----------------*/
+
+.section-description {
+    width: var(--section-header-descrip-width);
+    margin: 0 auto;
+}
+
+.header-spacing-bottom {
+    padding: var(--header-bottom-space);
+}
+
+.section-padding {
+    padding: var(--section-padding);
+}
+
+.margin-bottom {
+    margin-bottom: var(--section-gap-bottom)
+}
+
+/* btn with hover effects  */
+.btn {
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    font-size: var(--para-size);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+}
+
+.btn-secondary {
+    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/*text colors classes  */
 .text-dark {
     color: var(--dark-color)
 }
@@ -151,9 +139,25 @@ a:hover {
     color: var(--light-color)
 }
 
+.text-white {
+    color: var(--white-color);
+}
+
+/* common  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .margin-y {
     margin: var(--margin-y);
 }
+
 
 /*--------------- header section design starts ----------------- */
 
@@ -229,7 +233,6 @@ header .navbar {
 /*---------------- banner section design ends here-----------------------  */
 
 
-
 /* -------------------services and products starts here ----------------  */
 
 .serv-prod {
@@ -278,7 +281,7 @@ header .navbar {
 
 #about-products .product-container {
     display: grid;
-    grid-template-columns: var(--grid-columns-1-2-4);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap: 3rem;
 }
@@ -417,6 +420,7 @@ footer .footer-content {
     display: flex;
     align-items: center;
     gap: var(--gap);
+    margin-bottom: 30px;
 }
 
 footer .copy-right {
@@ -481,7 +485,7 @@ footer .copy-right {
 
     /* about products section */
     #about-products .product-container {
-        grid-template-columns: var(--grid-columns-1-2-4);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* about team section  */
