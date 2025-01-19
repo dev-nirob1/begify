@@ -1,3 +1,22 @@
+/* 
+===================================================================
+1. Global Reset -- *
+2. Variables (Root Styles)
+3. Typography
+4. Utility Classes
+5. Button Styles
+----------------section ----------------
+6. Header Section
+7. Banner Section
+8. Services and Products Section
+9. About Products Section
+10. Best-Selling Products Section
+11. About our team Section
+12. Testimonials section
+13. Footer Section 
+===================================================================
+*/
+
 /* reset styles globally */
 * {
     margin: 0;
@@ -84,6 +103,19 @@ a:hover {
 }
 
 /* ---------------utility classes ----------------*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-y {
+    margin: var(--margin-y);
+}
 
 .section-description {
     width: var(--section-header-descrip-width);
@@ -141,21 +173,6 @@ a:hover {
 
 .text-white {
     color: var(--white-color);
-}
-
-/* common  */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.margin-y {
-    margin: var(--margin-y);
 }
 
 
